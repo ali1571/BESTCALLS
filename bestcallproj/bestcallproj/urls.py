@@ -20,6 +20,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('admin/', admin.path),
+    path('admin/', admin.site.urls),
     path('', include('bestcallproj.bestcallapp.urls')), # Make sure this points to your app
 ]
