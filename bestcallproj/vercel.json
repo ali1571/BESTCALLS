@@ -1,0 +1,18 @@
+{
+  "builds": [
+    {
+      "src": "bestcallproj/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "bestcallproj/wsgi.py"
+    }
+  ]
+}
