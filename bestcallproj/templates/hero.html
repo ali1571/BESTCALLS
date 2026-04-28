@@ -368,7 +368,8 @@
           </div>
 
           <div class="video-tile-main" style="overflow: hidden; position: relative;">
-            <img src="{% static 'images/hero-image.png' %}"
+            {% load static %}
+            <img src="{% static 'your_image.png' %}" alt="Logo">
                  alt="Anastasiia K."
                  style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.9);">
 
