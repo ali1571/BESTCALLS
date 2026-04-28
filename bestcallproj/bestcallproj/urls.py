@@ -16,8 +16,10 @@ Including another URLconf
 """
 
 
+from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('', include('bestcallapp.urls')),
+    path('admin/', admin.path),
+    path('', include('bestcallproj.bestcallapp.urls')), # Make sure this points to your app
 ]
