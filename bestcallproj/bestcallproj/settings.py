@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
-ROOT_URLCONF = 'bestcallproj.urls'
+ROOT_URLCONF = 'bestcallproj.bestcallproj.urls'
 
 import os
 from pathlib import Path
@@ -77,7 +77,7 @@ STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
-WSGI_APPLICATION = 'bestcallproj.wsgi.application'
+WSGI_APPLICATION = 'bestcallproj.bestcallproj.wsgi.application'
 
 
 # Database
