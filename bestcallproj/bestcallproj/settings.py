@@ -55,12 +55,12 @@ ROOT_URLCONF = 'bestcallproj.bestcallproj.urls'
 import os
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent.parent.parent # Points to the root BESTCALLS folder
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')], # Matches your root templates folder
+        'DIRS': [os.path.join(BASE_DIR, 'templates')], # This points to bestcallproj/templates
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
