@@ -1,0 +1,129 @@
+<style>
+  #testimonials {
+    background: #080c14;
+    padding: 100px 32px;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .testimonial-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-top: 60px;
+  }
+
+  .testimonial-card {
+    background: #0f1624;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 32px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+  }
+
+  .testimonial-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(59, 130, 246, 0.3);
+  }
+
+  .quote-text {
+    color: #e2e8f0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #3b82f6;
+    background: #1a2235; /* Fallback */
+  }
+
+  .user-meta {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .user-name {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .user-role {
+    color: #64748b;
+    font-size: 0.85rem;
+  }
+
+  .stars {
+    color: #f59e0b;
+    display: flex;
+    gap: 2px;
+    margin-bottom: 12px;
+  }
+</style>
+
+<section id="testimonials">
+  <div class="testimonial-container">
+    <div style="text-align: center;">
+      <h2 class="section-title">Loved by people who hate lag.</h2>
+      <p style="color: #94a3b8; margin-top: 16px;">Don't take our word for it. Take theirs.</p>
+    </div>
+
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote-text">"I finally deleted Skype after ten years. BestCalls is exactly what it claims to be—zero setup, zero lag, and I'm never going back."</p>
+        <div class="user-info">
+          <img src="https://i.pravatar.cc/150?u=marcus" alt="Marcus" class="avatar">
+          <div class="user-meta">
+            <span class="user-name">Marcus Chen</span>
+            <span class="user-role">Independent Designer</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote-text">"We moved our whole engineering team over last week. Setup took literally 2 minutes. No 'can you hear me now' moments anymore."</p>
+        <div class="user-info">
+          <img src="https://i.pravatar.cc/150?u=sarah" alt="Sarah" class="avatar">
+          <div class="user-meta">
+            <span class="user-name">Sarah Jenkins</span>
+            <span class="user-role">CTO at SyncUp</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote-text">"The call quality is genuinely better than anything else I've tried. It feels like the person is in the room with you. Huge fan."</p>
+        <div class="user-info">
+          <img src="https://i.pravatar.cc/150?u=david" alt="David" class="avatar">
+          <div class="user-meta">
+            <span class="user-name">David Velez</span>
+            <span class="user-role">Content Creator</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
